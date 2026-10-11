@@ -1,0 +1,65 @@
+name: Member Directory Registration
+description: Join the Freepath member directory
+title: "[Directory] "
+labels:
+  - member-directory
+
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Handle
+      placeholder: mdcaddic(GMT+11)
+    validations:
+      required: true
+
+  - type: input
+    id: timezone
+    attributes:
+      label: Time Zone
+      placeholder: UTC+10 Australia/Sydney
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Experience Level
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - Professional
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: skills
+    attributes:
+      label: Skills
+      options:
+        - label: Programming
+        - label: Azure
+        - label: Microsoft 365
+        - label: Home Assistant
+        - label: Linux
+        - label: Networking
+        - label: Cyber Security
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: Availability
+      options:
+        - Flexible
+        - Weekends
+        - Evenings
+        - Limited
+
+  - type: dropdown
+    id: public
+    attributes:
+      label: Include in Public Directory?
+      options:
+        - Yes
+        - No
