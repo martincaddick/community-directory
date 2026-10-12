@@ -61,5 +61,5 @@ body:
     attributes:
       label: Include in Public Directory?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
